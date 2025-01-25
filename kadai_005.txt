@@ -1,0 +1,23 @@
+sh@Sachinonotobukkukonpyuta ~ % cd /Users/sh/Desktop
+sh@Sachinonotobukkukonpyuta Desktop % mkdir git_challenge
+sh@Sachinonotobukkukonpyuta Desktop % cd git_challenge
+sh@Sachinonotobukkukonpyuta git_challenge % git init
+Initialized empty Git repository in /Users/sh/Desktop/git_challenge/.git/
+sh@Sachinonotobukkukonpyuta git_challenge % echo 'Hello, world!'>hello_world.txt
+sh@Sachinonotobukkukonpyuta git_challenge % ls
+hello_world.txt
+sh@Sachinonotobukkukonpyuta git_challenge % cat hello_world.txt
+Hello, world!
+sh@Sachinonotobukkukonpyuta git_challenge % git add hello_world.txt
+sh@Sachinonotobukkukonpyuta git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) fb2174e] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+sh@Sachinonotobukkukonpyuta git_challenge % echo 'こんにちは、世界！'>>hello_world.txt
+sh@Sachinonotobukkukonpyuta git_challenge % git add hello_world.txt
+sh@Sachinonotobukkukonpyuta git_challenge % git commit -m "日本語訳を追記"     
+[main bc64039] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+sh@Sachinonotobukkukonpyuta git_challenge % git log --oneline hello_world.txt
+bc64039 (HEAD -> main) 日本語訳を追記
+fb2174e hello_world.txtを追加
